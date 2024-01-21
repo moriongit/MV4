@@ -9,6 +9,5 @@ namespace Cars.ViewModels.AuthVM
         [DataType(DataType.Password)]
         public string Password { get; set; }
        
-        public bool IsRemember { get; set; }
     }
 }

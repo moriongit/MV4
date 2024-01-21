@@ -76,28 +76,24 @@
         <!--Row-->
         <div class="row row-padding">
             <!--News Item-->
-        
-           
             @foreach(var item in Model.AutoAccessories)
             {
                 <div class="col-12 col-md-4">
                     <div class="news-item">
                         <div class="image-holder-gallery">
-                            <img alt="image" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FImage&psig=AOvVaw1_WbMue3znH5ZZ-pCfUysl&ust=1705558712796000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCLjzp77j44MDFQAAAAAdAAAAABAE">
+                            <img alt="image" src="@item.ImgUrl">
                         </div>
                         <div class="news-text-box">
                             <a href="#"><h4 class="news-title main-font">@item.Name</h4></a>
-                            <p class="para alt-font">desc</p>
+                            <p class="para alt-font">@item.Description</p>
                             <a href="cars-automobile/standalone.html" class="text-capitalize btn-red">Learn More</a>
                         </div>
                     </div>
                 </div>
             }
-                
-
-
-           
-        }
+            
+            
+            
         </div>
     </div>
 </section>

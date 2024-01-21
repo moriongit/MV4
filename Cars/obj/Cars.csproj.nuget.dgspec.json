@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mofu\\source\\repos\\Cars\\Cars\\Cars.csproj": {}
+    "C:\\Users\\mofu\\Desktop\\MV4\\Cars\\Cars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mofu\\source\\repos\\Cars\\Cars\\Cars.csproj": {
+    "C:\\Users\\mofu\\Desktop\\MV4\\Cars\\Cars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mofu\\source\\repos\\Cars\\Cars\\Cars.csproj",
+        "projectUniqueName": "C:\\Users\\mofu\\Desktop\\MV4\\Cars\\Cars.csproj",
         "projectName": "Cars",
-        "projectPath": "C:\\Users\\mofu\\source\\repos\\Cars\\Cars\\Cars.csproj",
+        "projectPath": "C:\\Users\\mofu\\Desktop\\MV4\\Cars\\Cars.csproj",
         "packagesPath": "C:\\Users\\mofu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mofu\\source\\repos\\Cars\\Cars\\obj\\",
+        "outputPath": "C:\\Users\\mofu\\Desktop\\MV4\\Cars\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

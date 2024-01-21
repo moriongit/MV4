@@ -11,7 +11,7 @@ namespace Cars.ViewModels.AuthVM
         public string Email { get; set; }
         [Required(ErrorMessage = "Enter username"), MaxLength(32)]
         public string Username { get; set; }
-        [Required, DataType(DataType.Password)]
+        [Required, DataType(DataType.Password), Compare(nameof(PasswordConfirmed),ErrorMessage ="Passwords do not match")]
         public string Password { get; set; }
         [Required, DataType(DataType.Password)]
         public string PasswordConfirmed { get; set; }

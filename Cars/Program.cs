@@ -1,4 +1,6 @@
 using Cars.Context;
+using Cars.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cars
@@ -13,7 +15,9 @@ namespace Cars
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<CarsDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("MsSql")));
+            builder.Services.AddIdentity<AppUser, IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<CarsDbContext>();
             var app = builder.Build();
+
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -24,6 +28,7 @@ namespace Cars
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

@@ -10,22 +10,23 @@
     <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with ready home page demos.">
     <!-- Page Title -->
     <title>Cars Automobile | MegaOne HTML5 Template</title>
-	<!-- Favicon -->cars-automobile
-    <link href="~/cars-automobile/images/favicon.ico" rel="icon">
+    <!-- Favicon -->
+    <link href="cars-automobile/images/favicon.ico" rel="icon">
     <!-- Bundle -->
-    <link href="~/vendor/css/bundle.min.css" rel="stylesheet">
+    <link href="vendor/css/bundle.min.css" rel="stylesheet">
     <!-- Plugin Css -->
-    <link href="~/vendor/css/LineIcons.min.css" rel="stylesheet">
-    <link href="~/vendor/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="~/vendor/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="~/vendor/css/wow.css" rel="stylesheet">
+    <link href="vendor/css/LineIcons.min.css" rel="stylesheet">
+    <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/css/wow.css" rel="stylesheet">
     <!-- Style Sheet -->
-    <link href="/css/tootik.min.css" rel="stylesheet">
-    <link href="~/cars-automobile/css/line-awesome.min.css" rel="stylesheet">
-    <link href="~/cars-automobile/css/model-window.css" rel="stylesheet">
-    <link href="~/cars-automobile/css/style.css" rel="stylesheet">
+    <link href="cars-automobile/css/tootik.min.css" rel="stylesheet">
+    <link href="cars-automobile/css/line-awesome.min.css" rel="stylesheet">
+    <link href="cars-automobile/css/model-window.css" rel="stylesheet">
+    <link href="cars-automobile/css/style.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="90">
+
     <!-- PRELOADER -->
     <div class="loader" id="loader-fade">
         <div class="loader-container">
@@ -53,8 +54,8 @@
         <nav class="navbar navbar-expand-lg nav-bottom-line center-brand static-nav">
             <div class="container">
                 <a class="navbar-brand scroll" href="#slider-area">
-                    <img src="~/cars-automobile/images/logo.png" alt="logo" class="logo-default">
-                    <img src="~/cars-automobile/images/logo.png" alt="logo" class="logo-scrolled">
+                    <img src="cars-automobile/images/logo.png" alt="logo" class="logo-default">
+                    <img src="cars-automobile/images/logo.png" alt="logo" class="logo-scrolled">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right d-none collapsed" type="button" data-toggle="collapse" data-target="#xenav">
                     <span> </span>
@@ -80,12 +81,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-social side-icons">
-                    <ul class="list-unstyled d-flex m-0">
-                        <a class="social-icon-clr" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
-                        <a class="social-icon-clr" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon-clr" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon-clr" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+                <div class="collapse navbar-collapse" id="xenav">
+                    <ul class="navbar-nav ml-auto mr-0 mr-lg-4">
+                        <li class="nav-item">
+                            <a  asp-action="Login" asp-controller="Auth">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  asp-action="Register" asp-controller="Auth">Register</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -128,12 +131,8 @@
         <!-- End side menu -->
     </header>
     <!-- START HEADER -->
+    @RenderBody()
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
     <!-- START CONTACT -->
     <section class="section slide5 contact-sec" id="contact">
         <div class="container expand-container">
@@ -198,25 +197,25 @@
                                     <!--Slides-->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-1.png" alt="First slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-1.png" alt="First slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-2.png" alt="Second slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-2.png" alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-3.png" alt="Third slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-3.png" alt="Third slide">
                                         </div>
                                     </div>
                                     <!--/.Slides-->
                                     <ol class="carousel-indicators">
                                         <li data-target="#carousel-thumb" data-slide-to="0" class="active">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal2-sub1.png" alt="First slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal2-sub1.png" alt="First slide">
                                         </li>
                                         <li data-target="#carousel-thumb" data-slide-to="1">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal2-sub2.png" alt="Second slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal2-sub2.png" alt="Second slide">
                                         </li>
                                         <li data-target="#carousel-thumb" data-slide-to="2">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal2-sub3.png" alt="Third slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal2-sub3.png" alt="Third slide">
                                         </li>
                                     </ol>
                                 </div>
@@ -294,25 +293,25 @@
                                     <!--Slides-->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-1.png" alt="First slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-1.png" alt="First slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-2.png" alt="Second slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-2.png" alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-3.png" alt="Third slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-3.png" alt="Third slide">
                                         </div>
                                     </div>
                                     <!--/.Slides-->
                                     <ol class="carousel-indicators">
                                         <li data-target="#carousel-thumb2" data-slide-to="0" class="active">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal1-sub1.png" alt="First slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal1-sub1.png" alt="First slide">
                                         </li>
                                         <li data-target="#carousel-thumb2" data-slide-to="1">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal1-sub2.png" alt="Second slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal1-sub2.png" alt="Second slide">
                                         </li>
                                         <li data-target="#carousel-thumb2" data-slide-to="2">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal1-sub3.png" alt="Third slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal1-sub3.png" alt="Third slide">
                                         </li>
                                     </ol>
                                 </div>
@@ -390,25 +389,25 @@
                                     <!--Slides-->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-1.png" alt="First slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-1.png" alt="First slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-2.png" alt="Second slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-2.png" alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="~/cars-automobile/images/model-windows/modal-img-3.png" alt="Third slide">
+                                            <img class="d-block w-100" src="cars-automobile/images/model-windows/modal-img-3.png" alt="Third slide">
                                         </div>
                                     </div>
                                     <!--/.Slides-->
                                     <ol class="carousel-indicators">
                                         <li data-target="#carousel-thumb3" data-slide-to="0" class="active">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal1-sub1.png" alt="First slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal1-sub1.png" alt="First slide">
                                         </li>
                                         <li data-target="#carousel-thumb3" data-slide-to="1">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal1-sub2.png" alt="Second slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal1-sub2.png" alt="Second slide">
                                         </li>
                                         <li data-target="#carousel-thumb3" data-slide-to="2">
-                                            <img class="d-block w-100 img-fluid" src="~/cars-automobile/images/model-windows/modal1-sub3.png" alt="Third slide">
+                                            <img class="d-block w-100 img-fluid" src="cars-automobile/images/model-windows/modal1-sub3.png" alt="Third slide">
                                         </li>
                                     </ol>
                                 </div>
@@ -477,33 +476,31 @@
     <div class="go-top"><i class="fas fa-angle-up"></i><i class="fas fa-angle-up"></i></div>
     <!--END SCROLL TOP-->
     <!-- JavaScript -->
-    <script src="~/vendor/js/bundle.min.js"></script>
+    <script src="vendor/js/bundle.min.js"></script>
     <!-- Plugin Js -->
-    <script src="~/vendor/js/jquery.appear.js"></script>
-    <script src="~/vendor/js/jquery.fancybox.min.js"></script>
-    <script src="~/vendor/js/owl.carousel.min.js"></script>
-    <script src="~/vendor/js/parallaxie.min.js"></script>
-    <script src="~/vendor/js/wow.min.js"></script>
-    <script src="~/vendor/js/jquery.cubeportfolio.min.js"></script>
+    <script src="vendor/js/jquery.appear.js"></script>
+    <script src="vendor/js/jquery.fancybox.min.js"></script>
+    <script src="vendor/js/owl.carousel.min.js"></script>
+    <script src="vendor/js/parallaxie.min.js"></script>
+    <script src="vendor/js/wow.min.js"></script>
+    <script src="vendor/js/jquery.cubeportfolio.min.js"></script>
     <!-- REVOLUTION JS FILES -->
-    <script src="~/vendor/js/jquery.themepunch.tools.min.js"></script>
-    <script src="~/vendor/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="vendor/js/jquery.themepunch.tools.min.js"></script>
+    <script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
     <!-- SLIDER REVOLUTION EXTENSIONS -->
-    <script src="~/vendor/js/morphext.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="~/vendor/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="vendor/js/morphext.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
     <!-- CUSTOM JS -->
-    <script src="~/vendor/js/contact_us.js"></script>
-    <script src="~/cars-automobile/js/script.js"></script>
-
-
- @await RenderSectionAsync("Scripts", required: false)
+    <script src="vendor/js/contact_us.js"></script>
+    <script src="cars-automobile/js/script.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -11,5 +11,6 @@ namespace Cars.Context
             
         }
         public DbSet<AutoAccessory> AutoAccessories { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }    
     }
 }
